@@ -48,7 +48,7 @@ import { Ng2FirstLayoutModule } from 'ng2-first-layout';
 
 @Component({
   template: `
-    <ng2-first-layout [data]="data" [settings]="settings"></ng2-first-layout>
+    <ng2-first-layout [settings]="settings"></ng2-first-layout>
   `
 })
 // ...
