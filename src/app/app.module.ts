@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { Ng2FirstTreeModule } from '../ng2-first-tree';
 
 import { PagesModule } from './pages/pages.module';
 
@@ -14,7 +13,6 @@ import { routes } from './app.routes';
 
 import { ScrollPositionDirective } from './theme/directives/scrollPosition.directive';
 
-import { SimpleTreeService } from './local_data_services/simple.tree.service';
 
 @NgModule({
   declarations: [
@@ -26,10 +24,9 @@ import { SimpleTreeService } from './local_data_services/simple.tree.service';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes, { useHash: true }),
-    Ng2FirstTreeModule,
     PagesModule,
   ],
-  providers: [SimpleTreeService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

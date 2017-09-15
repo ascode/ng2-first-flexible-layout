@@ -6,7 +6,7 @@ import { SharedModule } from '../../shared/shared.module';
 
 import { routes } from './home.routes';
 
-import { Ng2FirstTreeModule } from '../../../ng2-first-tree';
+import { Ng2FirstLayoutModule } from '../../../ng2-first-layout';
 
 import { HomeComponent } from './home.component';
 
@@ -15,10 +15,12 @@ import { HomeComponent } from './home.component';
     CommonModule,
     RouterModule.forChild(routes),
     SharedModule,
-    Ng2FirstTreeModule,
+    Ng2FirstLayoutModule,
   ],
   declarations: [
     HomeComponent,
   ],
 })
-export class HomeModule { }
+export class HomeModule { 
+  
+}

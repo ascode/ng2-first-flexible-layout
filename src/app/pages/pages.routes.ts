@@ -7,6 +7,6 @@ export const routes: Routes = [
   },
   {
     path: 'examples',
-    loadChildren: './examples/examples.module#ExamplesModule',
+    loadChildren: './home/home.module#HomeModule',
   },
 ];
