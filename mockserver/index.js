@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 var demoRouter = require('./demoRouter');
-let ng2FirstTbleRouter = require('./ng2-first-table.Router');
+let ng2FirstTbleRouter = require('./ng2-first-layout.Router');
 
 // app.all('*', function (req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "*");
@@ -19,7 +19,7 @@ app.use('/api/ng2FirstTable', ng2FirstTbleRouter);
 
 // app.listen(3000);
 
-var server = app.listen(3000, function () {
+var server = app.listen(3000, function() {
     var host = server.address().address;
     var port = server.address().port;
 
